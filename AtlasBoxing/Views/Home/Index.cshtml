@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="AtlasBoxingTitle">
+        <h1 id="title">ATLAS Boxing</h1>
+        <br />
+        <p class="lead">We are Leicester's newest amateur boxing club with experienced coaches both male and female. Accredited by England Boxing we cater for all levels.</p>
+       
+        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+    </section>
+
+    <div class="row">
+
+        <section class="col-md-4" aria-labelledby="classesTitle">
+            <h2 id="classesTitle">Classes</h2>
+            <p>
+                Join our dynamic boxing classes, explore our schedules for competitive boxers & open classes.
+            </p>
+            <p><a class="btn btn-outline-dark" href="@Url.Action("Classes", "Home")">Classes &raquo;</a></p>
+        </section>
+
+        <section class="col-md-4" aria-labelledby="youthCommunityHubTitle">
+            <h2 id="youthCommnityHubTitle">Youth Community Hub</h2>
+            <p>
+                Discover our vibrant youth community hub, check out our engaging schedule, and take advantage of our homework assistance program.
+            </p>
+            <p>
+            <a class="btn btn-outline-dark" href="@Url.Action("YouthCommunityHub", "Home")">Learn more &raquo;</a></p>
+        </section>
+
+        <section class="col-md-4" aria-labelledby="pricingTitle">
+            <h2 id="pricingTitle">Prices</h2>
+            <p>
+                Explore our competitive pricing for classes, community programs, and additional services—find out more.
+            </p>
+            <p><a class="btn btn-outline-dark" href="@Url.Action("Pricing", "Home")">Pricing &raquo;</a></p>
+        </section>
+    </div>
+</main>
